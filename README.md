@@ -2,7 +2,7 @@
 
 build a browserify version of zepto
 
-For the original Zepto, it's here [http://zeptojs.com]: http://zeptojs.com
+For the original Zepto, it's here http://zeptojs.com
 
 ### Install
 
