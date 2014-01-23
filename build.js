@@ -3,7 +3,12 @@ var HTTP = require("q-io/http"),
 
 HTTP.read('https://raw.github.com/peutetre/zepto/1.1.2/zepto.js')
     .then(function (body) {
-        return FS.write("./index.js", body.toString().replace(/var Zepto =/, 'var Zepto = module.exports ='));
+        var rslt = body.toString()
+                    .replace(/var Zepto =/, 'var Zepto = module.exports =')
+                    .replace(/window.Zepto = Zepto/, '')
+                    .replace(/window.\$ === undefined && \(window.\$ = Zepto\)/, '');
+
+        return FS.write("./index.js", rslt);
     })
     .fail(function(err){
         console.log(err);

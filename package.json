@@ -1,5 +1,5 @@
 {
-  "name": "zepto-browserify",
+  "name": "browserify-zepto",
   "version": "1.1.2",
   "description": "Browserify version of Zepto",
   "main": "index.js",

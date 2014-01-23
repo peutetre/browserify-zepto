@@ -1,4 +1,4 @@
-# zepto-browserify
+# browserify-zepto
 
 build a browserify version of zepto
 
@@ -7,11 +7,11 @@ For the original Zepto, it's here [http://zeptojs.com]: http://zeptojs.com
 ### Install
 
 ```
-npm install zepto-browserify
+npm install browserify-zepto
 ```
 
 ### Usage
 
 ```javascript
-var Zepto = require('zepto-browserify');
+var Zepto = require('browserify-zepto');
 ```
